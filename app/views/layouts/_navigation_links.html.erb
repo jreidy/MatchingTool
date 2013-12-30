@@ -1,0 +1,17 @@
+<li 
+	<% if controller?("home") && action?("about") %>
+		<%= "class=active" %>
+	<% end %> 
+	><%= link_to "About" , about_path %></li>
+
+<li
+	<% if controller?("home") && action?("contact") %>
+		<%= "class=active" %>
+	<% end %> 
+	><%= link_to "Contact" , contact_path %></li>
+
+<li
+	<% if controller?("home") && action?("scholarships") %>
+		<%= "class=active" %>
+	<% end %> 
+	><%= link_to "Scholarships" , scholarships_path %></li>

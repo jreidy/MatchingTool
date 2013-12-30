@@ -1,0 +1,182 @@
+// import the CSS framework
+@import "bootstrap";
+
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  }
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+  }
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.form {
+  @extend .col-md-6;
+  }
+.form-centered {
+  @extend .col-md-6;
+  @extend .text-center;
+  }
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  }
+// apply styles to HTML elements
+// to make views framework-neutral
+main {
+  @extend .container;
+  background-color: #eee;
+  padding-bottom: 80px;
+  width: 100%;
+  margin-top: 51px; // accommodate the navbar
+  }
+section {
+  @extend .row;
+  margin-top: 20px;
+  }
+
+// navbar coloring
+.navbar-default {
+    background-color: #59a551;
+    border-color: #4a9b3e;
+}
+.navbar-default .navbar-brand {
+    color: #fefcf6;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #fefcf6;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #e6ebed;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fefcf6;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fefcf6;
+    background-color: #4a9b3e;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fefcf6;
+    background-color: #4a9b3e;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #e6ebed;
+    border-bottom-color: #e6ebed;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #fefcf6;
+    border-bottom-color: #fefcf6;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #fefcf6;
+    border-bottom-color: #fefcf6;
+}
+.navbar-default .navbar-toggle {
+    border-color: #4a9b3e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #4a9b3e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e6ebed;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #e6ebed;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fefcf6;
+    }
+}
+
+// brand li customization
+.navbar-brand {
+  font-size: 136%;
+  /*font-weight: bold;*/
+
+}
+
+html { background: #59a551 }
+
+//body and background
+.main_background {
+  
+  /*background: url('/images/sun_valley_background.jpg');*/
+  background-color: #59a551;
+  height: 100%;
+}
+.content-container {
+  background-color: #4a9b3e;
+  margin-top: 30px;
+}
+.content-container > p {
+  color: #fefcf6;
+}
+
+//about page columns
+.about-row {
+  background-color: #7DCD71;
+  padding: 0px;
+}
+.about-column-map {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+//about header
+.about-column-header {
+  color: white;
+  background-color: #4a9b3e;
+}
+.about-column-header > h1{
+  font-size: 85px;
+}
+//column next to header
+.side-header {
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  color: white;
+}
+.side-header > p {
+  font-size: 15px;
+}
+//column beneath header
+.bottom-section {
+  color: white;
+}
+.bottom-section > p {
+  padding: 25px;
+  padding-top: 40px;
+  font-size: 40px;
+}
+.bottom-section > button {
+  margin-top: 25px;
+
+  font-size: 20px;
+}
+/*.button-section {
+  background-color: #4a9b3e;
+}*/

@@ -1,4 +1,16 @@
 MatchingTool::Application.routes.draw do
+
+  # root 'home#about'
+  # get "home/about"
+  # get "home/contact"
+  # home_path -> '/'
+
+  root  'home#about'
+  match '/about',    to: 'home#about',    via: 'get'
+  match '/contact',   to: 'home#contact',   via: 'get'
+  match '/scholarships',   to: 'home#scholarships',   via: 'get'
+
+  # about_path -> 'home/about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
